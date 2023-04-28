@@ -69,11 +69,11 @@ CREATE TABLE proyecto_airports(
   ,status                   VARCHAR(1)  NOT NULL
   ,certification_typedate   VARCHAR(13) NOT NULL
   ,customs_airport_of_entry VARCHAR(1)
-  ,military_joint_use       VARCHAR(1)
-  ,military_landing         VARCHAR(1)
+  ,military_joint_use       BOOLEAN
+  ,military_landing         BOOLEAN
   ,lighting_schedule        VARCHAR(7)
   ,beacon_schedule          VARCHAR(5) NOT NULL
-  ,control_tower            VARCHAR(1) NOT NULL
+  ,control_tower            BOOLEAN NOT NULL
   ,unicom                   NUMERIC(7,3)
   ,ctaf                     NUMERIC(7,3)
   ,effective_date           DATE       NOT NULL
