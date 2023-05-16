@@ -27,3 +27,13 @@ Lista de transformaciones en la data:
 4. Convertir los campos N/Y en tipo boolean
 
 Se utilizo sqlalchemy para crear el engine de carga en Amazon Redshift
+
+##### Control de Cambio - Tercera Entrega
+
+Para la tercera entrega se realiza la integración y vinculación con Airflow, por medio de Docker.
+El objetivo es utilizar airflow en conjunto con la conexión a Amazon Redshift donde se convierta el
+codigo del Python Notebook a un DAG con las mismas funciona de ETL que las entregas pasadas.
+
+1. Configurar la conexión en airflow a Amazon Redshift. Con el nombre de "DataWareHouse AWS"
+   Descripción de la conexión: "Repositorio final donde va a quedar alojada la data procesada de la información climática de los aeropuertos de la Florida, cada minuto."
+2. Implementación de dos PythonOperator para ejecutar las tareas de ETL.
