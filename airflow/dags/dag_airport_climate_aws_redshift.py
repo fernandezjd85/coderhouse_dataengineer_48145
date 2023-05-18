@@ -113,12 +113,12 @@ def climate_load(dt):
     print(f"Seguimiento:", df_airport_weather)
     
     # Datos de la conexion
-    url       = "data-engineer-cluster.cyhh5bfevlmn.us-east-1.redshift.amazonaws.com" 
+    url       = "*.redshift.amazonaws.com" 
     port      = "5439"
     data_base = "data-engineer-database" 
-    user      = "fernandezjd85_coderhouse"
-    pwd       = "YR2Nacf5Qn6S"
-    myschema  = "fernandezjd85_coderhouse" 
+    user      = "*******"
+    pwd       = "*******"
+    myschema  = "*******" 
 
     # Se crear la conexión
     conn = create_engine(f'postgresql://{user}:{pwd}@{url}:{port}/{data_base}')
